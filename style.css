@@ -28,7 +28,7 @@ body {
 }
 
 main.main {
-    max-width: 375px;
+    max-width: 400px;
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
@@ -52,7 +52,7 @@ main.main {
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    padding: 25px;
+    padding: 30px 25px;
 }
 
 .info h1 {
@@ -60,9 +60,14 @@ main.main {
     font-size: 28px;
 }
 
+.info > p {
+    margin-top: -20px;
+} 
+
 .info p {
     color: var(--Desaturated);
     font-weight: 500;
+    line-height: 1.7;
 }
 
 
