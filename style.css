@@ -1,0 +1,139 @@
+:root {
+    --Pale: hsl(225, 100%, 94%);
+    --Bright: hsl(245, 75%, 52%);
+    --white: hsl(225, 100%, 98%);
+    --Desaturated: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);    
+    background-position: center;
+    background-size: cover;
+    background-color: var(--Pale);
+    color: var(--Darkblue);
+}
+
+main.main {
+    max-width: 355px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.image {
+    height: 225px;
+    background-image: url(images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+}
+
+.info h1 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.info p {
+    color: var(--Desaturated);
+    font-weight: 500;
+}
+
+
+
+
+.price {
+    padding: 16px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-info {
+    margin-left: -40px;
+}
+
+.price-info h4 {
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+
+.info a {
+    font-weight: 700;
+    transition: .5s linear;
+    color: var(--Bright);
+    cursor: pointer;
+}
+
+.info a:hover {
+    text-decoration: none;
+    color: #a18afd;
+}
+
+
+
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.payment {
+    width: 100%;
+    padding: 15px;
+    color: var(--white);
+    border-radius: 10px;
+    background-color: var(--Bright);
+    transition: .5s linear;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.payment:hover {
+    background-color: #7d5ff2;
+}
+
+.cancel {
+    color: var(--Desaturated);
+    transition: .5s linear;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cancel:hover {
+    color: var(--Darkblue);
+}
+
+
+
+
